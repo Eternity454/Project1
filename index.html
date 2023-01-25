@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Agency Design Studio </title>
+	<meta name="description" content="We provide different services : UX/UI Design, Management, Animation & Logo / Branding Design">
+	<link rel="stylesheet" href="css/style.css">
+<body class="page">
+	<div class="wrapper">
+		<div class="page_header">
+			<header class="nav">
+				<ul class="menu">
+					<li class="menu_button">
+						<a class="menu_link" href="">Home</a>
+					</li>
+					<li class="menu_button">
+						<a class="menu_link" href="">Portfolio</a>
+					</li>
+					<li class="menu_button">
+						<a class="menu_link" href="">About Us</a>
+					</li>
+					<li class="menu_button">
+						<a class="menu_link" href="">Contact</a>
+					</li>
+				</ul>
+			</header>
+		</div>
+		<main class="content">
+			<div class="page_main">
+				<div class="intro">
+					<div class="intro_block">
+						<h1 class="intro_heading">Our strong<br>
+							<span class="intro_heading_style">organisation</span>
+						</h1>
+						<p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
+						<button class="button_block red_button" href="">Contact Us</button>
+						<div class="popup"></div>
+					</div>
+					<a class="intro_image_link" href="">
+						<img class="image_1" src="images/1.jpeg" alt="Intro Image" width="551" height="356">
+					</a>
+				</div>
+			</div>
+		</main>
+		<div class="footer">		
+			<footer class="footer">
+				<div class="footer_content">
+					<p>&copy; Copyright January 2023, All rights reserved.</p>
+					<div class="footer_socials">
+						<a class="footer_link" href="">
+							<img src="images/Twitter_Rounded_Solid.png" alt="Лого">
+						</a>
+						<a class="footer_link" href="">
+							<img src="images/LinkedIn_Rounded_Solid.png" alt="Лого">
+						</a>
+						<a class="footer_link" href="">
+							<img src="images/Google_Rounded_Solid.png" alt="Лого">
+						</a>
+						<a class="footer_link" href="">
+							<img src="images/Facebook_Rounded_Solid.png" alt="Лого">
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script>
+    	let button = document.querySelector('.button_block');
+    	button.addEventListener('mouseover', showPopup);
+   	 	button.addEventListener('mouseout', hidePopup);
+    	function showPopup() {
+        	document.querySelector('.popup').classList.add('visible');
+        	console.log('showPopup работает');
+    	}
+    	
+   	     	function hidePopup() {
+        	document.querySelector('.popup').classList.remove('visible');
+        	console.log('hidePopup работает');
+    	}
+
+	</script>	
+</body>
+</html>
